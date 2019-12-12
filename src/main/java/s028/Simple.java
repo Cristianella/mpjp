@@ -10,7 +10,7 @@ import java.lang.Math; // not required
  */
 public class Simple {
     public static void main(String[] args) {
-        System.out.println(Math.PI);
+        System.out.println(Math.PI); // stampa il p greco
     }
 }
 

@@ -20,13 +20,14 @@ public class Primitive {
         long z = 1_000_000_000_000_000L;
         System.out.println(z);
 
-        float f = 3.12e20F;
+        float f = 3.12e20F; // 3.12 X 10 alla ventesina;
         System.out.println(f);
 
         double d = 3.12e200;
         System.out.println(d);
         
-        double nan = Double.NaN;
+        // sono delle costanti che possono essere utili
+        double nan = Double.NaN; // nan è un numero che deve essere uguale a NAN che significa "non è un numero";
         double posInf = Double.POSITIVE_INFINITY;
         double negInf = Double.NEGATIVE_INFINITY;
         
