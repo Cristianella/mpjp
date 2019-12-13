@@ -14,11 +14,11 @@ public class Exercise4 {
 			
 			if( array[i] == 7) {
 				seven =true;
-				posizione = i;
-				System.out.println(" Il valore 7 è presente nell'array" + i);
+				posizione = array[i];
+				System.out.println(" Il valore 7 è presente nell'array" + posizione);
 				
 			} else if ( array[i] == 1) {
-				posizione = i;
+				posizione = array[i];
 				one = true;
 				System.out.println(" Il valore 1 è presente nell'array " + i);
 				
