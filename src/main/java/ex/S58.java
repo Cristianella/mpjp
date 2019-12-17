@@ -72,6 +72,8 @@ public class S58 {
 		}
 		if (value == 9) {
 			return "nine";
+		} else {
+
 		}
 
 		return "other";
@@ -87,7 +89,20 @@ public class S58 {
 	 */
 	public static char vote(double percentile) {
 
-		return 'F';
+		if (percentile > 90) {
+			return 'A';
+		} else if (percentile > 80) {
+			return 'B';
+		} else if (percentile > 70) {
+			return 'C';
+		} else if (percentile > 60) {
+			return 'D';
+		} else if (percentile > 50) {
+			return 'E';
+		} else {
+
+			return 'F';
+		}
 	}
 
 	/**
@@ -117,12 +132,42 @@ public class S58 {
 	 * @return a sorted array
 	 */
 	public static int[] sort(int a, int b, int c) {
-		int[] result = {1, 2, 3};
+		int[] result = new int[3];
+
+		if (a < b) {
+			if (c < a) {
+				result[0] = c;
+				result[1] = a;
+				result[2] = b;
+			}
+
+		} else if (c > b) {
+
+			result[0] = a;
+			result[1] = b;
+			result[2] = c;
+		} else {
+			result[0] = a;
+			result[1] = c;
+			result[2] = b;
+		}
 		
+		if (a > b) {
+			if ( c > a) {
+				result[0] = b;
+				result[1] = a;
+				result[2] = c;
 				
-			
-		
-		   
+			} else if (c < b) {
+				result[0] = c;
+				result[1] = b;
+				result[2] = a;
+			} else {
+				result[0] = b;
+				result[1] = c;
+				result[2] = a;
+			}
+		}
 
 		return result;
 	}
