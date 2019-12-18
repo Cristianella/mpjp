@@ -7,7 +7,7 @@ public class Main {
         mammals[1] = new Cat(63, 20);
 
         for (Mammal mammal : mammals) {
-            System.out.println(mammal.toString());
+            System.out.println(mammal.toString()); // polimorfismo.
         }
     }
 }

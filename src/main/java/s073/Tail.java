@@ -7,7 +7,7 @@ public class Tail {
         this.size = size;
     }
 
-    public int getSize() {
+    public int getSize() { // mi ritorna il valore della lunghezza della coda.
         return size;
     }
 

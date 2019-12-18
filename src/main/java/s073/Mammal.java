@@ -1,10 +1,10 @@
 package s073;
 
 public abstract class Mammal {
-    protected int gestation;
+    protected int gestation; // è una proprietà (variabile all'interno della classe);
 
-    public Mammal(int gestation) {
-        this.gestation = gestation;
+    public Mammal(int gestation) { //costruttore
+        this.gestation = gestation; // quello di colore marrone è il valore che mi passa l'utente.
     }
 
     @Override
